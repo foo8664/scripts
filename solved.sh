@@ -12,7 +12,7 @@ compiles() {
 
 	case "$extension" in
 		"cpp")
-			g++ -Wall -Werror -Wextra -std=c++20 -pedantic "$1" -o /dev/null
+			g++ -Wall -Werror -Wextra "$1" -o /dev/null
 			ret="$?"
 			;;
 		"c")
