@@ -25,7 +25,7 @@ compiles() {
 }
 
 cd "$HOME/code/study/neps/exercises"
-rm -f a.out your_output.txt expected_output.txt input.txt teste.zip &>/dev/null
+rm -f a.out your_output.txt expected_output.txt input.txt *.zip &>/dev/null
 
 # LANGUAGES[@]/#/*. hsubstitutes each extension to *.<extension>
 files="$(git status --porcelain "${LANGUAGES[@]/#/*.}" | grep '^??' | awk '-F ' '{print $2}')"
